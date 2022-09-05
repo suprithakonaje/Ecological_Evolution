@@ -1,4 +1,3 @@
-from random import random
 import numpy as np
 import copy
 
@@ -8,6 +7,7 @@ N = ecology_constants.NUMBER_OF_SPECIES
 
 
 def create_random_population():
+    # np.random.seed(0)
     pop = np.zeros(N)
     for i in range(N):
         pop[i] = np.random.uniform(0.0, 0.1)
